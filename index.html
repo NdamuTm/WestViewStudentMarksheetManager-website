@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Marksheet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="head">    
+        <h1>WestView College - Student Marksheet</h1>
+        <div id="menu">
+            <button onclick="addStudent()">Add Student</button>
+            <button onclick="displayMarksheet()">Display Marksheet</button>
+            <button onclick="showSearchStudent()">Search Student</button>
+            <button onclick="showStudents()">Show Students</button>
+        </div>
+    </div>
+    <div id="students-container"></div>
+    <div id="search-student-container" style="display: none;">
+        <input type="text" id="search-student-name" placeholder="Enter student name">
+        <button onclick="searchStudent()">Search</button>
+    </div>
+    <div id="student-popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <div id="student-details"></div>
+        </div>
+    </div>
+    <ul id="context-menu" class="context-menu">
+        <li onclick="updateStudentMarks()">Update Marks</li>
+        <li onclick="deleteStudent()">Delete Student</li>
+    </ul>
+    <script src="script.js"></script>
+    
+    <script>
+        window.onload = function() {
+            displayStudents();
+        };
+    </script>
+</body>
+</html>

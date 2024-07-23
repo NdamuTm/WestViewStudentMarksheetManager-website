@@ -1,0 +1,182 @@
+body {
+    font-family: sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+#menu {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#students-container, #search-student-container {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.context-menu {
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 5px;
+    display: none;
+}
+
+.context-menu li {
+    list-style: none;
+    margin: 2px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.context-menu li:hover {
+    background-color: #eee;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.popup-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* Existing styles... */
+
+.student-details {
+    display: flex;
+    gap: 20px;
+}
+
+.grades-table, .summary-table {
+    width: max-content;
+    border-collapse: collapse;
+}
+
+.grades-table table, .summary-table table {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.grades-table th, .grades-table td, .summary-table th, .summary-table td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+.grades-table th, .summary-table th {
+    background-color: #f4f4f4;
+}
+
+
+table *{
+    color: #7A7E86;
+}
+
+#search-student-container {
+
+    background: #F4F7FC;
+    border-radius: 15px;
+    outline: none;
+    display: flex;
+    border: white solid 1rem;
+}
+
+
+#search-student-container input{
+    border: none;
+    outline: none;
+    background: none;
+    flex: 1;
+    width: 80%;
+}
+
+#search-student-container button{
+    border: none;
+    outline: none;
+    background: #1294F2;
+    color: white;
+    width: 15%;
+    font-size: 16px;
+    font-weight: bold;
+    padding: .3rem;
+    border-radius: 1rem;
+}
+
+body{
+    background: #D3D2D2;
+    padding: 1rem;
+}
+
+#students-container,.head {
+    background: white;
+    border-radius: 1rem;
+    padding: 2rem;
+    margin-bottom: 1rem;
+}
+table{
+    background: white;
+    border-radius: 1rem;
+}
+
+h1{
+    color: #7A7E86;
+}
+
+.head button{
+    border: none;
+    outline: none;
+    background: #1294F2;
+    color: white;
+    font-weight: bold;
+    padding: .5rem;
+    border-radius: .6rem;
+    margin-left: 1rem;
+}
