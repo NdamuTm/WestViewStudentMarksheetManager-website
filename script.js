@@ -15,7 +15,7 @@ function addStudent() {
     students.push(student);
     localStorage.setItem("students", JSON.stringify(students));
 
-    displayStudents();
+showStudents()
 }
 
 function displayMarksheet() {
@@ -215,7 +215,7 @@ function updateStudentMarks() {
 
     student.marks = newMarks;
     localStorage.setItem("students", JSON.stringify(students));
-    displayStudents();
+showStudents()
     showStudentDetails(selectedStudentIndex);
 }
 
@@ -223,7 +223,7 @@ function deleteStudent() {
     hideContextMenu();
     students.splice(selectedStudentIndex, 1);
     localStorage.setItem("students", JSON.stringify(students));
-    displayStudents();
+showStudents()
 }
 
 function getGrade(average) {
